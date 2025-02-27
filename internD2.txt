@@ -1,0 +1,81 @@
+Internship Report - Day Two
+Today was an engaging and insightful experience. I had the opportunity to learn more about problem-solving through various puzzles and interactive discussions.  One of the highlights of the day was meeting senior engineers, interacting with them, and gaining valuable insights about people already in the industry.
+
+Continuing on Problem-Solving
+Problem-solving is a fundamental skill that combines logic, creativity thinking, and mathematical thinking. There are multiple ways to approach a problem, and no single method to solve a problem.   -A great example of this is the 3x3 number puzzle, where one box is empty, and the goal is to arrange the numbers in the correct order.
+This problem can be solved using different approaches:
+Manual Approach: Writing the matrix on paper and solving it in a two-dimensional format, multiple times.
+Physical Approach: Cutting out numbers on paper and moving them around on a table in a three-dimensional space.
+Algorithmic Approach: Developing an algorithm or a program to automate the solution.
+
+This example illustrates a key principle: there is no single way to solve a problem—multiple approaches can lead to a solution.
+
+Bridge Problem – Understanding the Limits of Problem-Solving
+Another interesting problem we explored was the Bridge Problem:
+There are four places: A, B, C, and D with some areas covered by water.
+The only way to travel between these areas is by crossing bridges.
+However, each bridge can be used only once.
+At first glance, this seems solvable, but after multiple attempts, we realize that there is no solution that satisfies all conditions. 
+
+This brings up an important lesson:
+Not all problems have solutions –  Understanding when a problem is not solvable is just as crucial as solving it.
+Multiple attempts lead to deeper learning – Solving problems repeatedly helps us recognize patterns and limitations more efficiently.
+Expertise comes from experience – The more we engage with different types of problems, the better we become at recognizing feasibility, constraints, and possible solutions.
+This exercise helps us to understand that problem-solving is not just about finding answers but also about recognizing constraints, and developing the ability to identify when a solution does not exist.
+
+
+Steps in Problem-Solving
+Understanding the Problem
+If the problem is unclear, rephrase or reinstate it to improve clarity.
+Go through the problem multiple times to ensure a thorough understanding.
+Break down complex problems into smaller, sub-problems.
+Seek clarification when necessary by discussing with peers or mentors.
+Listing the Constraints
+Identify the rules and limitations that must be followed.
+Example: In the 3x3 number puzzle, only one tile can be moved at a time.
+Constraints can be physical (limitations) or logical (rules ).
+Defining the Operations
+Establish what actions can be performed to solve the problem.
+Example: In the 3x3 puzzle, each tile can only move up, down, left, or right.
+Understanding operations ensures a structured approach to solving the problem.
+
+ 
+Reducing Constraints Gradually  -‘More constrains to less constrains.’
+Complex problems often have multiple constraints that make them harder to solve.
+By addressing each constraint one step at a time, the problem becomes more manageable.
+Example: In Sudoku or the 3x3 puzzle, solving one section at a time simplifies the overall problem.
+Decomposing the problem into smaller sections and addressing each one efficiently leads to an optimal solution.
+
+Conclusion
+Problem-solving is not just about finding the answer—it's about understanding the problem, recognizing constraints, identifying operations, and reducing complexity.
+The Bridge Problem showed that some challenges have no solution, and recognizing this is a important part of problem-solving. Similarly, working through different puzzles helped us understand the idea that multiple approaches exist, and experience plays a vital role in selecting the best one.  Session 2.  How Computers Solve Problems
+Computers fundamentally solve problems using two primary approaches:
+Brute Force Approach
+Algorithmic Approach 
+1. Brute Force Approach
+The brute force method involves trying all possible solutions until the correct one is found.   Example:
+In a 3x3 puzzle, brute force would involve moving tiles randomly until the correct arrangement is achieved. 
+ Try all possible paths by randomly selecting bridges and checking if a valid solution exists.
+
+2. Algorithmic Approach
+An algorithmic approach follows set of logical steps to arrive at a solution efficiently.  Instead of checking all possibilities, it intelligently narrows down the search space.
+
+Conclusion
+Brute force is useful when the dataset is small .
+Algorithmic approaches are the foundation of efficient problem-solving in software engineering. Unlike brute force methods, which exhaustively test all possibilities, algorithmic approache provide structured, and optimized solutions for real-world problems.  
+
+
+
+Meeting Senior Engineers.
+George – Backend Learned how full-stack development works through a real-world analogy: When an order is placed in an application (frontend), it is sent to the restaurant (backend) for processing. The food is then prepared and sent back to the user. The API acts as the "traveler" that connects the frontend and backend.
+Richie – Data Analyst Learnt about Why data analysis is necessary, data visualization techniques and learned that Surfboard Payments performs best on Chrome and Safari browsers.  There are limitations when using mobile browsers or Brave.
+Learnt about Surfboard Payments – Products Gained insights into the products & software solutions offered by the company to European country.
+Ashwin – iOS & Android, UI Learned that Ashwin works on UI development using Flutter and JavaScript.
+Satish – Tester Discovered that testing engineers also require programming knowledge for both manual and automated testing.  JavaScript is necessary & used in automation testing.
+Learnt about Problem-Solving Approach in testing;
+Where is the Problem ? & find solution
+What is the issue?
+What is the reason behind the problem? 
+Harish – Backend It was great to meet Harish, as we had previously connected on LinkedIn. We had discussed how he got into the company and the skills required for his role.
+
+
