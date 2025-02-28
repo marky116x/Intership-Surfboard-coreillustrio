@@ -1,40 +1,63 @@
 Internship Report Day-1.
+
  Introduction
+
 Starting my internship has been an exciting and insightful journey. Being surrounded by talented software engineers has been an incredible experience, providing me with a unique opportunity to learn and grow in the world of software engineering and IT.
- First, we got met Koushik, our trainer. What a cool person! Instead of taking the traditional approach, Koushik helped the other interns and me set up the right mind set to become successful software engineers. He didn't make us start with programming or any other technical aspects right away. Instead, he gave an interactive talk about what skills are necessary for software engineers and why. 
+ 
+First, we got met Koushik, our trainer. What a cool person! Instead of taking the traditional approach, Koushik helped the other interns and me set up the right mind set to become successful software engineers. He didn't make us start with programming or any other technical aspects right away. Instead, he gave an interactive talk about what skills are necessary for software engineers and why. 
  The people here are also really friendly and welcoming. They've made me feel right at home since day one. Their support and openness have created an environment where I can freely explore new ideas, learn from my experienced senior engineers, and continuously develop my skills.
 This report highlights my understanding of skills, categorized into simple and complex types, and emphasizes the importance of problem-solving in coding. Additionally, we also explored how these skills evolve in the world of AI and their impact on the future of programming.
  
-Skills  A skill is the ability to do something well.
-in general we can be categorized into two types : Simple & Complex.
+Skills  
+- A skill is the ability to do something well.
+
+In general we can be categorized into two types :- Simple & Complex.
+
 Moving on and we had a Discussion and listing out different skills and hilighted Simple & Complex skills.
 
-Simple Skills
-Simple skills are abilities that come naturally and require minimal effort to develop. These skills do not demand extensive practice or specialized training.
- Examples include:
-Singing
-Dancing
-Driving
-Complex Skills
-Complex skills require a combination of strengths, expertise, and experience, often demanding continuous learning and practice.  Mastery of these skills often demands continuous learning, practice, and a mixture of many.
+Simple Skills.
+   Simple skills are abilities that come naturally and require minimal effort to develop. 
+   These skills do not demand extensive practice or specialized training.
 Examples include:
-Coding
-Managing a business
-Performing medical surgery 
-Key Skills for Software Engineering
+-Singing
+-Dancing
+-Driving
+
+Complex Skills.
+   Complex skills require a combination of strengths, expertise, and experience, often demanding continuous learning and practice.  
+   Mastery of these skills often demands continuous learning, practice, and a mixture of many.
+Examples include:
+-Coding
+-Managing a business
+-Performing medical surgery 
+
+
+'Key Skills for Software Engineering'
 While numerous skills are valuable in the software engineering field, a few stand out as essential:
-Reading, Writing, and Learning
-Problem-Solving, Mathematical Thinking, and Researching/Googling
-are the skill very much needed in the stream of Software engineering & Tech. We have all learnt to Read, write and learn from our childhood, but Problem solving, mathematically thinking and researching/Googling are something that can be gained only with expertise and experience. Outta the skills mentioned we started off with Problem solving.
+Reading,
+Writing, and 
+Learning
+
+Problem-Solving, 
+Mathematical Thinking, and 
+Researching/Googling
+
+are the skill very much needed in the stream of Software engineering & Tech. 
+We have all learnt to Read, write and learn from our childhood, but Problem solving, mathematically thinking and researching/Googling are something that can be gained only with expertise and experience. 
+
+Outta the skills mentioned we started off with Problem solving.
 
 
-Understanding Problem-Solving
-Problem-solving is an essential skill used in everyday life, not just in software engineering but in day to day tasks we do problem-solving every single day.  Every day, we face various challenges that require logical thinking, analysis, and decision-making to arrive at the best possible solutions.
-It involves identifying challenges, analyzing them, and finding out feasible / best solutions.
+Understanding Problem-Solving.
+    Problem-solving is an essential skill used in everyday life, not just in software engineering but in day to day tasks we do problem-solving every single day.  
+    Every day, we face various challenges that require logical thinking, analysis, and decision-making to arrive at the best possible solutions.
+    It involves identifying challenges, analyzing them, and finding out feasible / best solutions.
+
 How to Approach Problem-Solving
-Don’t Avoid the Problem – Acknowledge the issue instead of ignoring it. Facing the problem is the first step toward solving it.
-Understand the Problem – Analyze what the problem is about.  Ask questions like: What is the core issue? Why did it happen? What are the possible causes?
-Identify Constraints – Determine the limitations and factors affecting the solution, such as time, resources, rules, or external conditions.  
+    Don’t Avoid the Problem – Acknowledge the issue instead of ignoring it. Facing the problem is the first step toward solving it.
+    Understand the Problem – Analyze what the problem is about.  Ask questions like: What is the core issue? Why did it happen? What are the possible causes?
+    Identify Constraints – Determine the limitations and factors affecting the solution, such as time, resources, rules, or external conditions.  
+
 Before session 2, we were given an assessment sheet where there were many skills listed, and we were asked to write out self-assessed top 5 skills and rate our skills out of 1-5. 
 Looking at this assessment, I realized that I need to improve some of my skills. One skill I always believed I was good at was leadership and managing people. In fact, this reminded me of my time at the university when I used to lead projects, manage the workflow, and motivate my friends.  but this assessment made me realise i still need to increase my expertise in  leadership and managing people.
 
