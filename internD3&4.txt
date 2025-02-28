@@ -1,32 +1,53 @@
 Internship Report - Day 3 & 4
-Day 3 - We reviewed our internship reports and learned how to write them properly.  
+
+Day 3 
+- We reviewed our internship reports and learned how to write them properly.  
 
 Day 4.
+
 Propositions: Statements That Can Be True or False
+
  Examples of True Propositions:
 "The sky is blue." (True)
 "2 + 2 = 4." (True) 
 Examples of False Propositions:
 "The Earth is flat." (False)
 "5 is greater than 10." (False) 
+
 Why Learn About Propositions?
 In programming, we use Boolean statements, which follow the same concept as propositions.
+
 What Are Boolean Statements?
-Boolean statements are expressions that hold the value either True or False.  Example:
-x = 10 		& 	y = 5   print(x > y) # True  print(x == y) # False  print(y < 20) # True 
+Boolean statements are expressions that hold the value either True or False.  
+
+Example:
+x = 10 		& 	y = 5   
+print(x > y) # True  
+print(x == y) # False  
+print(y < 20) # True 
+
+
 Terminal & CLI (Command Line Interface)
 The Terminal (or CLI - Command Line Interface) is a text-based interface used to interact with the computer. 
-It allows users to execute commands, manage files, and run programs.  Few commands i picked up on internet while learning about CLI.  ls        # List files and directories
+It allows users to execute commands, manage files, and run programs.  
+
+Few commands i picked up on internet while learning about CLI.  
+
+ls        # List files and directories
 pwd       # Print current directory
 cd /path  # Change directory
 mkdir new_folder  # Create a new directory
-rm file.txt  # Remove a file  ___ 
-Text editor
-A text editor is a application used to create, edit, and manipulate plain text files.
- Text editors range from simple ones like Notepad to advanced editors for coding like VS Code, Jetbrains Pycharm and Vim.
- VIM Text editor. - it is inbuilt on macOS , as MacOS is built on top of Linux.
+rm file.txt  # Remove a file  
 
-Steps to use vim text editor 
+Text editor.
+A text editor is a application used to create, edit, and manipulate plain text files.
+
+ Text editors range from simple ones like Notepad to advanced editors for coding like VS Code, Jetbrains Pycharm and Vim.
+
+VIM Text editor. 
+- it is inbuilt on macOS , as MacOS is built on top of Linux.
+
+Steps to use vim text editor :-
 
 Open Terminal: Launch the Terminal application on your Mac.
 
@@ -38,14 +59,30 @@ Type:- vim filename.txt
 
 Press Enter.
 This will open a new empty file named "filename.txt" in Vim. 
+
 Editing the file:
 Enter insert mode: Press the "i" key to start typing text.  
 Write your text: Type the content you want in the file.
 Exit insert mode: Press the "Esc" key to go back to normal mode. 
+
 Saving and exiting:
 Save: Press "Esc" followed by ":w" and then "Enter" to save the file.
-Quit: Press "Esc" followed by ":q" and then "Enter" to exit Vim.  or Combine Save & Quit - “ :wq “
-We learnt to use vim on terminal & upload our text files to github.  we started by installing Git on our computers and Uploading our files, by following the steps.  1. Download git from git-scm.com/ downloads. 2. Install on device. 3. Create a repository on get up named internship. 4. Create a file from your terminal. 5. Edit file. 6. Initialise from the same folder. 7. Add the text file created. 8. Commit the file with a message. 9. Push the file.  We used the following commands.
+Quit: Press "Esc" followed by ":q" and then "Enter" to exit Vim.  
+or Combine Save & Quit - “ :wq “
+
+We learnt to use vim on terminal & upload our text files to github.  
+we started by installing Git on our computers and Uploading our files, by following the steps.  
+1. Download git from git-scm.com/ downloads. 
+2. Install on device. 
+3. Create a repository on get up named internship. 
+4. Create a file from your terminal. 
+5. Edit file. 
+6. Initialise from the same folder. 
+7. Add the text file created. 
+8. Commit the file with a message. 
+9. Push the file.  
+
+We used the following commands.
 git init git add internD1.txt
 git commit -m "first commit"
 git branch -M master
