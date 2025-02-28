@@ -83,7 +83,8 @@ we started by installing Git on our computers and Uploading our files, by follow
 9. Push the file.  
 
 We used the following commands.
-git init git add internD1.txt
+git init 
+git add internD1.txt
 git commit -m "first commit"
 git branch -M master
 git remote add origin https://github.com/marky116x/Intership.git
