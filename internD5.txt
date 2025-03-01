@@ -61,7 +61,7 @@ While both can generate code, ChatGPT sometimes produces "hallucinated" outputs.
 
 We also learnt about Git, a widely used version control system, learning how it helps track changes in code, collaborate efficiently, and manage repositories. This knowledge is essential for maintaining structured and organized software development workflows.
 
-Relating Loki series to git, secret timeline and parallel timeline
+Relating Loki series to git, secret timeline and parallel timeline.
 
 
 🕰️ 1. The Sacred Timeline = Main Branch
@@ -111,12 +111,7 @@ git branch [name] – Creates a new branch.
 git checkout [branch] – Switches to a different branch.
 git checkout -b [branch] – Creates and switches to a new branch.
 git merge [branch] – Merges a branch into the current branch.
-📌 Examining History
-These commands let you review past changes and commits.
 
-git log – Displays the commit history of the repository.
-git diff – Shows differences between commits or working states.
-git checkout [commit] – Allows you to view the repository at a specific commit.
 📌 Undoing Changes
 Mistakes happen—these commands help you roll back changes.
 
