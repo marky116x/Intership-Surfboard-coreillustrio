@@ -6,7 +6,7 @@
 
 We also reviewed;
 
-### steps in problem solving :
+### Steps in problem solving :
 
 1. Understanding the Problem 
  -If the problem is unclear, reinstate.
