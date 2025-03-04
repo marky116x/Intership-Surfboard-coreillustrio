@@ -10,11 +10,17 @@ We also reviewed;
 
 1. Understanding the Problem 
  -If the problem is unclear, reinstate.
+
 2.Break It into Smaller Subproblems
+
 3.List the Constraints
+
 4.Define the Operations
+
 5.From More Constraints to Fewer Constraints
+
 6.Come Up with a Solution.
+
 
 ### Computing - Calculating.
 
