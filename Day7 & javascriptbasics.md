@@ -1,3 +1,7 @@
+
+
+
+
 ## The `console.log()` Method
 The `console.log()` method is used to print messages to the browser’s developer console. 
 
