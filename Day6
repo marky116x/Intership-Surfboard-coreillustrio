@@ -1,0 +1,123 @@
+Introduction.
+
+#Mathematical representations.
+
+Lets consider two statements p & q.
+
+1. Logical Conjunction (AND) p∧q - True if both p & q are true, otherwise false.
+2. Logical Disjunction (OR)  p∨q - True if at least one of p & q are true
+3. Negation (NOT)            ¬p  - Reverses the truth value of The statement. If p is true, ¬p is false, and vice versa.
+4. Implication (Conditional) p→q - one thing happen , then another thing follows.
+5. Biconditional(If and Only If) p↔q - True if both p&q have the same truth value (both true or both false).
+                                      If & only If p is true then only q can be true also.
+
+Here’s the mathematical representation for each of the logical operations:
+
+1. Logical Conjunction (AND) 
+   - Truth Table:
+     | p | q |p∧q|
+     |---|---|---|
+     | T | T | T |
+     | T | F | F |
+     | F | T | F |
+     | F | F | F |
+
+2. Logical Disjunction (OR)
+
+   - Truth Table:
+     | p | q |p∨q|
+     |---|---|---|
+     | T | T | T |
+     | T | F | T |
+     | F | T | T |
+     | F | F | F |
+
+3. Negation (NOT)
+
+   - Truth Table:
+     | p | ¬p|
+     |---|---|
+     | T | F |
+     | F | T |
+
+4. Implication (Conditional)
+   
+   - Truth Table:
+     | p | q |p→q|
+     |---|---|---|
+     | T | T | T |
+     | T | F | F |
+     | F | T | T |
+     | F | F | T |
+
+5.Biconditional (If and Only If)
+  
+   - Truth Table:
+     | p | q |p↔q|
+     |---|---|---|
+     | T | T | T |
+     | T | F | F |
+     | F | T | F |
+     | F | F | T |
+
+
+Session 2.
+
+Mark down file.
+Markdown (.md) is a lightweight markup language used to format text in a simple and readable way. 
+It is commonly used for documentation, READ.ME files on GitHub, and writing structured content.
+
+# Heading 1
+## Heading 2
+### Heading 3
+
+---------
+
+Mentorship.
+Mentor - Joel
+
+We discussed how development works at Surfboard, where Flutter and JavaScript are the primary technologies used.
+
+How AI Enhances Surfboard Apps.?
+AI in surfboard apps personalizes the user experience by analyzing behavior and preferences.
+
+->Recommendation based on previous purchases. 
+ex. Mark goes to a clothing store and buys Light weighted , airy shirts. 
+Using this information Ai can translate; and show on screen Light weighted & airy dresses similar to Previous purchase. 
+- Material used, design (Lots of holes for design  or thinness of cloth), structure.
+and recommend alternative designs which have the same charasterics . 
+
+->Ads based on previous purchases.  ex. New launch of Light and Airy Jackets or Pullover. Shorts which are Light weight and follow the same kind of design 
+ personalised messages and holiday wishes. which can be automated through AI.
+    		 ex. If mark buys cloths which has Marvel & its characters branding,
+		AI can take note of it and message them When a new movie or Series is released & Run Ad on screen based on latest release new movie or Series.
+
+Which can increase profits & make an memorable experience for the customer.  
+       
+Flutter AI Integration.
+Enhance Flutter apps with AI for image recognition, NLP, and predictive analytics.  
+:- Image recognition -Amazon camera.
+:- NLP -  Predictive text, wrong grammar correction on pos.
+:- Predictive analytics - What we spoke over top (How AI Enhances Surfboard Apps.). 
+
+Key AI Tools, examples.
+TensorFlow Lite -Multi-platform Support for Android and iOS , MacOS & Linux - supports. -Choose TensorFlow if you are focused on deploying models at scale, 
+need extensive production support, or prefer a more established ecosystem.
+
+PyTorch Mobile -Supports only Mobile applications. -Choose PyTorch if you prioritize ease of use, flexibility, and a dynamic approach to model building, especially in research or prototyping contexts.
+Conclusion : For surfboard , since the user-base is huge and Need cross platform support and only mobile support, we would choose TensorFlow For production ready deployable applications.
+
+
+4. Vertex AI.   latest Gemini models from Google.
+ Vertex AI is a machine learning (ML) platform that helps you build, deploy, and manage AI models.  
+With Vertex AI, you can use and customize large language models (LLMs). 
+Prediction is the end goal, Vertex ai gives tools to support for ML workflow.  
+Managed Datasets + (AutoML) models => Prediction.   
+
+Conclusion.
+Today we had a conversation about how to think and brainstorm ideas to be a better.
+And not a rely on Ai but to review doc files on particular techology and gain insites from diffrent resources,
+to have a broader perspective, instead of having all compessed in one place through AI.
+
+we followed by study on how to use Ai in Flutter development.
+
