@@ -78,6 +78,8 @@ Markdown (.md) is a lightweight markup language used to format text in a simple 
 **Mentor:** Joel
 
 We discussed how development works at Surfboard, where **Flutter** and **JavaScript** are the primary technologies used.
+How AI works?
+AI works by analyzing past data, identifying features , characteristics or patterns and making recommendations based on that information.
 
 ### How AI Enhances Surfboard Apps
 AI in Surfboard apps personalizes the user experience by analyzing behavior and preferences.
@@ -89,14 +91,15 @@ AI in Surfboard apps personalizes the user experience by analyzing behavior and 
   - Example: If Mark buys Marvel-branded clothes, AI can notify him when a new Marvel movie or series is released and display relevant ads.
   
 This approach increases profits and creates a memorable experience for customers.
+thats how AI can help.
 
 ---
 
 ## Flutter AI Integration
 Enhance Flutter apps with AI for:
-- **Image Recognition** (e.g., Amazon Camera)
-- **Natural Language Processing (NLP)** (e.g., Predictive text, grammar correction)
-- **Predictive Analytics** (e.g., AI-driven recommendations)
+- Image Recognition (e.g., Camera can be used to identify products and add to cart )
+- Natural Language Processing (NLP) (e.g., Predictive text, grammar correction : help with searching products)
+- Predictive Analytics (e.g., AI-driven recommendations)
 
 ### Key AI Tools & Examples
 
@@ -123,3 +126,5 @@ Enhance Flutter apps with AI for:
 ## Conclusion
 Today's discussion focused on **how to think and brainstorm ideas independently** rather than relying entirely on AI. 
 We explored AI applications in Flutter development and how reviewing multiple resources can provide broader insights rather than compressing everything into a single AI-generated response.
+
+
