@@ -68,9 +68,9 @@ Markdown (.md) is a lightweight markup language used to format text in a simple 
 
 ### Headings
 
-# Heading 1  
-## Heading 2  
-### Heading 3  
+# Heading 1    - #
+## Heading 2   - ##
+### Heading 3  -###
 
 ---
 
