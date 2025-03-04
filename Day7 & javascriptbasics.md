@@ -75,7 +75,7 @@ This is the only way a computer can understand instructions.
 
 ## How to Use JavaScript
 - **Inline**: Write directly in an HTML file using `<script>`.
-- **External**: Link an external JavaScript file for better organization.
+- **External**: Link an external JavaScript file for better organization. <script src=" file_name.js">
 
 
 ## Output Methods:
