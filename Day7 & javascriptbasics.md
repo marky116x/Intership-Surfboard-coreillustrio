@@ -22,12 +22,15 @@ We also reviewed;
 6.Come Up with a Solution.
 
 
-### Computing - Calculating.
+### Computing 
+Computing means - Calculating.
 
 Input → Memory + Processing → Output
 
 Input: Data is received
+
 Memory & Processing: The computer stores data in memory, retrieves the necessary information for the process , and performs required processing.
+
 Output: The processed Output is displayed.
 
 
