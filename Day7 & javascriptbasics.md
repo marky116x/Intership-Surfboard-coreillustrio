@@ -135,13 +135,6 @@ new Promise((resolve, reject) => { code });
 .finally();
 ```
 
-### Promise Chaining
-```javascript
-fetch("url")
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
-```
 
 #### Promise States
 - **Pending** → Initial state (neither fulfilled nor rejected).
@@ -156,38 +149,44 @@ fetch("url")
 
 ### Async / Await
 A better way to write promises, making code cleaner.
-```javascript
-async function fetchData() {
-  try {
-    let response = await fetch("url");
-    let data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error(error);
-  }
-}
-```
+
 
 ### Promises vs Async/Await
 #### Promise
+
+Example: 
+
 ```javascript
-function order() {
-  return new Promise((resolve, reject) => {
-    // Write code here
-  });
+
+function toppings_choice (){
+  return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+
+      resolve( console.log("which topping would you love?") )
+
+    },3000)
+  })
 }
+
 ```
 #### Async/Await
 ```javascript
-async function order() {
-  try {
-    await abc;
-  } catch (error) {
-    console.error(error);
-  } finally {
-    console.log("Done");
-  }
+async function kitchen(){
+
+  console.log("A")
+  console.log("B")
+  console.log("C")
+
+  await toppings_choice()
+
+  console.log("D")
+  console.log("E")
+
 }
+
+// Trigger the function
+
+kitchen();
 ```
 Array manipulation. - to add, remove, and find items in an array
 
