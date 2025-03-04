@@ -1,5 +1,31 @@
+# Class of Problems.
+1. Have a solution.
+2. Have multiple solutions.
+3. Trial and error.
+4. Have no soution.
+
+We also reviewed;
+
+### steps in problem solving :
+
+1. Understanding the Problem 
+ -If the problem is unclear, reinstate.
+2.Break It into Smaller Subproblems
+3.List the Constraints
+4.Define the Operations
+5.From More Constraints to Fewer Constraints
+6.Come Up with a Solution.
+
+### Computing - Calculating.
+
+Input → Memory + Processing → Output
+
+Input: Data is received
+Memory & Processing: The computer stores data in memory, retrieves the necessary information for the process , and performs required processing.
+Output: The processed Output is displayed.
 
 
+---
 
 
 ## The `console.log()` Method
