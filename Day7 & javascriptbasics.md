@@ -44,6 +44,12 @@ retrieves the necessary information for the process ,
 
 Output: The processed Output is displayed.
 
+# How Computer's understand.
+Computers are DUMB , simple machines.
+
+They operate only on zero's and one's —where zero represents 0V, and one represents 5V.
+
+Every instruction given to a computer is translated into these 0's & 1's values, and then computed.
 
 ---
 
