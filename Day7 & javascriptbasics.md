@@ -188,12 +188,17 @@ async function kitchen(){
 
 kitchen();
 ```
-Array manipulation. - to add, remove, and find items in an array
+### Array manipulation. 
+- to add, remove, and find items in an array
 
 push() – Adds an element to the end of an array
+
 pop() – Removes the last element from an array
+
 slice() – slice(start, end) 
+
 includes() - to check if an array contains a specific element
+
 
 Conclusion:
 
