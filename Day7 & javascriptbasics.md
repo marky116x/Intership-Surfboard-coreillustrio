@@ -209,7 +209,7 @@ slice() – slice(start, end)
 includes() - to check if an array contains a specific element
 
 
-Conclusion:
+## Conclusion:
 
 Today, I learned about the asynchronous nature of JavaScript and different methods for handling asynchronus. 
 I also practiced writing functions, using identifiers (IDs) in an HTML file, 
