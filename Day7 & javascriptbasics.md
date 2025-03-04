@@ -47,7 +47,7 @@ Output: The processed Output is displayed.
 
 ---
 
-Session 2. 
+# Session 2. 
 
  Understanding JavaScript and Asynchronised nature of JavaScript.
 
