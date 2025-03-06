@@ -1,0 +1,84 @@
+I learned about algorithms 
+Algorithims:as step-by-step instructions.
+
+Since computers are not intelligent on their own, 
+they require precise commands to execute instructions as required by us. 
+
+
+Session 2.
+SDLC - Software Development Life Cycle
+Today, we got to go through SDLC (Software Development Life Cycle) and learned how software development SDLC is a structured approach to design and develop quality software. Without SDLC, there can be lots of confusion and no discipline in creating a product.
+
+SDLC is a systematic, disciplined approach to development and minimizes risk in a huge, large process. The phases of SDLC are:
+
+-Phases of SDLC
+Planning and Requirements Analysis
+This phase involves gathering input from stakeholders and senior experts.
+A detailed requirement document is created.
+
+-Specification of Needs
+Here, functional and non-functional requirements are documented.
+This step ensures that all project expectations are well-defined and agreed upon.
+
+-Designing the Software
+The design phase includes High-Level Design (HLD) and Low-Level Design (LLD).
+
+HLD focuses on overall system architecture, while
+LLD details individual components.
+-Project Development
+Developers begin coding based on the designs.
+The choice of programming languages, frameworks, and technologies used depends on the project’s needs.
+
+-Testing
+This phase ensures that the software functions as intended.
+It includes various testing methods such as unit testing, integration testing, system testing, and user acceptance testing (UAT).
+
+-Deployment
+Once tested, the software is deployed in a live environment where end users can access it.
+
+-Maintenance
+Post-deployment, regular updates, bug fixes, and performance enhancements ensure the software remains functional and efficient.
+
+SDLC Models.
+Several SDLC models guide development teams based on project requirements and complexity:
+
+Waterfall Model: A linear, sequential approach.
+V-Model (Verification and Validation): This model emphasizes testing at each stage, ensuring that validation and verification occur in parallel.
+Prototype Model
+Spiral Model: A risk-driven model that combines iterative development with systematic risk analysis.
+Agile Model: An iterative and incremental approach where development occurs in sprints, allowing for continuous feedback and adaptation.
+
+
+Among the various SDLC models, 
+the Spiral and Agile meodels are widely used due to their flexibility and adaptability. 
+Agile, in particular, is favored for its iterative nature, allowing teams to incorporate changes and deliver functional software in shorter cycles.
+
+Through this study of system design concepts, including:
+
+High-Level Design (HLD): Focuses on the overall system architecture of a product, serving as a blueprint.
+HLD is usually done by architects.
+Specifies the structure of the application from start to end.
+
+Low-Level Design (LLD): Provides detailed implementation specifications for individual parts of a product.
+LLD is usually done by engineers.
+Specifies the database schema, with the data type & we can interconnect if a schema is already present.
+
+
+Flexbox (Flexible Box Layout)
+Flexbox is used for designing flexible and responsive layouts without relying on floats or positioning. It helps align and distribute space efficiently.
+
+Defines the direction, column, or row the container must be.
+
+CSS Transitions
+Transitions add smooth animations when CSS properties change.
+
+I also created a login page using HTML and CSS... it was a great learning experience.
+
+key learnings:
+-Using <form> to structure the login inputs properly.
+- add icons using assests floder
+- how to rearrange using containers using flex property
+- css can be used external, internal & inline.
+
+
+
