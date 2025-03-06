@@ -1,0 +1,103 @@
+JavaScript and Its Asynchronous Nature
+
+Overview
+Today, I spent time learning about JavaScript and its asynchronous behavior.
+I’ve always heard that JavaScript is single-threaded but can still handle multiple tasks simultaneously, and now I understand why.
+
+It’s because of how JavaScript manages tasks asynchronously using callbacks, promises, and async/await. JavaScript doesn’t just run code step by step but can execute certain tasks in the background without blocking the main execution. This is the asynchronous nature of JavaScript.
+
+Key Features of JavaScript
+Versatile: It can handle simple scripts and complex applications.
+Event-Driven: Responds to user actions, making web pages interactive.
+Asynchronous: Helps in fetching data without freezing the UI.
+Rich Ecosystem: A huge number of libraries and frameworks to speed up development.
+Using JavaScript
+I explored different ways to use JavaScript in an HTML file:
+
+Inline: Writing JavaScript directly inside the <script> tag in an HTML file.
+External: Linking an external JavaScript file using <script src="file_name.js"> for better organization.
+Output Methods in JavaScript
+
+
+I practiced different ways to display output:
+
+document.getElementById("id1").innerHTML = "hi";
+console.log("Message");
+document.write("Text");
+window.alert("Alert!");
+window.prompt("Enter a value:");
+
+
+JavaScript Basics
+Variables :
+JavaScript provides different ways to declare variables:
+
+var (global scope) - But var has some issues. Hence, from ES6, we have:
+let and const (block scope) - They overcome the limitations of var since their scope is restricted to the block.
+
+
+Ternary Operator
+A shortcut for if-else:
+let age = 60;
+let res = (age > 59) ? "Adult" : "Not Adult";
+Asynchronous JavaScript
+JavaScript is single-threaded and synchronous by default, but it can appear asynchronous due to:
+
+Callbacks (functions passed as arguments inside other functions)
+Promises (to avoid nested callbacks)
+Async/Await (a cleaner way to handle promises)
+
+
+Meaning of Synchronous vs Asynchronous
+Synchronous: Code runs line by line, waiting for each task to complete before moving on.
+Asynchronous: Some tasks can run in the background while the rest of the code executes.
+
+Callbacks
+A callback is just a function that you pass as an argument to another function so that it can be called later when needed.
+
+Problems with Callbacks:
+Callback Hell: Excessive nesting makes code unreadable and hard to maintain.
+Difficult Error Handling: Increased complexity.
+Poor Readability & Maintainability: Nested callbacks are hard to debug and modify.
+Solution: Use Promises.
+
+Promises
+Promises in JavaScript are objects representing the eventual result of an asynchronous operation. 
+They provide a structured way to handle asynchronous code, 
+improving readability and maintainability compared to traditional callback-based approaches. 
+
+To solve callback hell, JavaScript introduced Promises. 
+
+
+A promise has three states:
+
+Pending: The initial state.
+Resolved (Fulfilled): The operation completed successfully.
+Rejected: The operation failed.
+Example:
+
+new Promise((resolve, reject) => { // some asynchronous code })
+.then(() => console.log("Success"))
+.catch(() => console.log("Failure"))
+.finally(() => console.log("Always runs"));
+
+
+Async / Await
+A cleaner way to write promises using async and await.
+
+This makes the code easier to read and avoids complex .then() chains.
+
+Array Manipulation
+I also learned about some useful array methods:
+
+push() – Adds an element to the end of an array.
+pop() – Removes the last element from an array.
+slice(start, end) – Extracts a section of an array.
+includes() – Checks if an array contains a specific element.
+
+Conclusion :
+Today, I learned about the asynchronous nature of JavaScript and different methods for handling asynchronous tasks. 
+I also practiced writing functions, using identifiers (IDs) in an HTML file, 
+and linking them to a JavaScript file to display content on the screen. 
+Additionally, I explored array manipulation using methods like push, pop, and slice, along with examples to understand their functionality.
+
