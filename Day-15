@@ -36,3 +36,8 @@ Angular.
 -Understood the core structure, components, and data binding in angular.
 -Reactive Forms: Started learning form controls, form groups, and validation.
 -To-Do List Project: Applying Angular concepts to build a functional todo list app.
+
+Control statements- @if & @else
+Use @if to show a message when there are no tasks. 
+
+Use @for to render the list of tasks.
