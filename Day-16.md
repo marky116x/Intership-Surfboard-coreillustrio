@@ -68,7 +68,7 @@ Classes provide a structured way to define and create objects in JavaScript. The
 
 ------------------------
 
-# Introduction to Angular Components & Core Concepts
+# Angular Components & Core Concepts
 
 ## 1. Understanding Components in Angular
 
@@ -78,10 +78,6 @@ A **component** in Angular is the basic building block of an application. It con
 - **Class (TypeScript)** – Handles logic and data.
 - **Styles (CSS/SCSS)** – Controls the component's appearance.
 
-To create a component, we use the Angular CLI command:
-```bash
-ng generate component component-name
-```
 
 This generates the necessary files, including:
 - `component.ts` – Logic
