@@ -59,7 +59,7 @@ Valid
 
 ## Problem 4: Towers of Hanoi
 
-### Recursive Algorithm:
+### Algorithm:
 1. **Start**
 2. Define a function `Hanoi(n, source, auxiliary, target)`:  
    - **If** `n == 1`:
