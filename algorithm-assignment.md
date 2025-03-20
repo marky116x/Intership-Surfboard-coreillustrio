@@ -104,7 +104,7 @@ Valid
 
 ### Algorithm:
 1. **Start**
-2. Replace all `;` with `.` and `:` with `_`
+2. Replace all `;` with `.` & `:` with `_`
 3. Split the Morse code into words and letters
 4. Convert each Morse symbol to English using a predefined dictionary
 5. Print the decoded message
