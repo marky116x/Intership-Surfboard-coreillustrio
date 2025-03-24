@@ -94,24 +94,17 @@ The meaning of `this` changes depending on where it's used, which is why it can 
 - In event handlers
 - With arrow functions
 
-Had a mini coding competition with other interns to spot all the places where `this` was being used incorrectly. I got most of them right, but definitely still have more studying to do here.
+Had a mini coding test with other interns to spot all the places where `this` was being used incorrectly. I got most of them right, but definitely still have more studying to do here.
 
 ## Day 17
 Got a performance review on our internship today. Some solid feedback, and of course, advice on how to do better. Definitely some areas to improve on.
 
-My mentor highlighted that I'm doing well with picking up technical concepts but need to work on asking more specific questions when I'm stuck. Apparently I'm too vague when describing problems I'm facing. Also got praised for helping other interns, which was nice to hear.
-
-The team lead mentioned they want to see more initiative from me - not just completing assigned tasks but thinking about how to improve things. That's fair. I tend to wait for instructions rather than suggesting changes.
-
-On the technical side, I need to be more careful with git commits. I've been committing too many changes at once with vague commit messages. Need to make smaller, more focused commits with clearer descriptions.
 
 Overall, the review was positive but gave me clear areas to focus on. Made a personal checklist of things to improve:
 - Ask more specific questions (include expected vs. actual results)
-- Commit more frequently with better messages
-- Take more initiative on projects
-- Document my code better
+- Take more initiative on projects & learning
+- Document my code & writtengs better
 
-Feeling motivated to address these points in the coming weeks.
 
 ## Day 18
 Session 2 today—covered a few basics:
@@ -120,7 +113,6 @@ Session 2 today—covered a few basics:
 - For Loops – Classic `for (i=0; i>=10; i++)` loop. Also went through `forEach`, `map`, `filter`, and `reduce` methods for arrays, which are way more elegant for many use cases.
 - JSON (JavaScript Object Notation) – The format in which data is transferred between frontend and backend. I didn't realize how ubiquitous JSON is - basically the universal language of web APIs.
 
-We had a practical exercise converting between JavaScript objects and JSON strings using `JSON.stringify()` and `JSON.parse()`. Got tripped up by some quirks like how `JSON.stringify()` handles dates and functions (it doesn't, really).
 
 ```javascript
 // Convert an object to JSON string
@@ -136,22 +128,15 @@ const person = {
   sayHello: function() { console.log("Hello!"); }
 };
 
-const jsonString = JSON.stringify(person);
-console.log(jsonString);
-// Notice how the function and date get handled!
-
-// Convert JSON string back to object
-const parsedObject = JSON.parse(jsonString);
 ```
 
-After the session, spent some time experimenting with different data structures and how they convert to JSON. Found out the hard way that circular references cause JSON.stringify to throw errors - had to look up some workarounds for that.
 
 ## Day 19
 Today, we learned about memory allocation in programming—how variables and objects are stored in memory. Turns out, normal variables get new memory locations when reassigned, but lists and objects keep the same memory address even when modified. This explains so many weird bugs I've encountered!
 
 Example with primitive types (numbers, strings, booleans):
 
-```python
+```
 a = 10  
 b = a  
 print(b)  # Output: 10  
@@ -206,9 +191,8 @@ The message was clear:
 - 🔥 Don't just complete tasks. Improve.
 - 💡 Take responsibility. Own your progress.
 
-This was probably one of the most motivating sessions we've had so far. Really made me rethink how I approach learning and growth. Made a commitment to myself to start spending at least 30 minutes reading documentation before turning to AI for help.
+This was probably one of the most motivating sessions we've had so far. Really made me rethink how I approach learning and growth. Made a commitment to myself to start spending at least time reading documentation & learning before turning to AI for help.
 
-After the session, had a great discussion with other interns about how we've been relying too much on shortcuts. We decided to start a study group where we tackle problems without AI first, then compare our solutions with what AI would suggest as a learning exercise.
 
 __________________________________________________________________________________________
 
