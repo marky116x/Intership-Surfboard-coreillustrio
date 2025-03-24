@@ -1,5 +1,6 @@
 # Internship Weekly report - 4th Week: Days 15-20
-
+This week was more towards in-depth learning of programming concepts and angular web development.
+here, is the day by day summary.
 ## Day 15
 Today, we went over variable declaration in TypeScript and its data types. One thing that stood out was the "!" (definite assignment assertion) in TypeScript. Basically, if you do:
 
