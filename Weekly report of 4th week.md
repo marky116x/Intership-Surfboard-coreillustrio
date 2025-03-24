@@ -1,4 +1,4 @@
-# Internship Journal: Days 15-20
+# Internship Weekly report - 4th Week: Days 15-20
 
 ## Day 15
 Today, we went over variable declaration in TypeScript and its data types. One thing that stood out was the "!" (definite assignment assertion) in TypeScript. Basically, if you do:
