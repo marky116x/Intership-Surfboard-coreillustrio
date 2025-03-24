@@ -187,9 +187,9 @@ The session wasn't just about AI, though. The bigger takeaway was about responsi
 
 The message was clear:
 
-- 🚀 Stop waiting for opportunities. Create them.
-- 🔥 Don't just complete tasks. Improve.
-- 💡 Take responsibility. Own your progress.
+- 🚀 Stop waiting for opportunities. Be the best and make use of what you got.
+- 🔥 Don't just complete tasks. **Be responsible & take ownership.** Improve our lives in a better way.
+
 
 This was probably one of the most motivating sessions we've had so far. Really made me rethink how I approach learning and growth. Made a commitment to myself to start spending at least time reading documentation & learning before turning to AI for help.
 
