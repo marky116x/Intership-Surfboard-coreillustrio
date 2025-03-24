@@ -17,3 +17,7 @@ Learning, adapting to software development, and taking ownership of our growth a
 We received an inspiring speech about taking responsibility and owning our lives—not just going through the motions but actively doing something meaningful with them. The message was clear: success comes when we take charge of our actions, decisions, and growth.  
 
 It reminded us that responsibility isn’t just about completing tasks—it’s about learning, improving, and making an impact. Instead of waiting for opportunities, we should create them. Instead of relying on external factors, we should take ownership of our progress. This perspective shift encouraged us to be proactive, embrace challenges, and shape our future with purpose.  
+
+
+## On day 20- Mentorship, 
+reviewed my learnings in Angular of the whole week.
