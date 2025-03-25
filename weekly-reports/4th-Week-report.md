@@ -2,7 +2,7 @@
 This week was more towards in-depth learning of programming concepts and angular web development.
 here, is the day by day summary.
 ## Day 15
-Today, we went over variable declaration in TypeScript and its data types. One thing that stood out was the "!" (definite assignment assertion) in TypeScript. Basically, if you do:
+Today, we went over variable declaration and its data types. One thing that stood out was the "!" (definite assignment assertion) in TypeScript. Basically, if you do:
 
 ```typescript
 name!: string;
@@ -14,11 +14,11 @@ It tells TypeScript, "Hey, I promise this variable will be assigned before it's 
 this.name = "Mark";
 ```
 
-And it works without TypeScript complaining. I had been getting a ton of errors before learning this trick - would have saved me hours of debugging last week!
+And it works without TypeScript complaining. 
 
-We also touched on the Unicode Standard, which is what lets us use a crazy amount of characters (155,063, to be exact) in different languages and symbols. Pretty amazing how much thought has gone into making sure computers can display everything from Japanese kanji to weird emojis.
+We also touched little on the Unicode Standard, which is what lets us use a huge amount of characters (155,063, to be exact) in different languages and symbols. 
 
-Then, we went through some core JavaScript concepts like:
+Then, we went through some core Programming concepts like:
 
 - Arrays – Ordered lists of values. I found out you can mix data types in JavaScript arrays which is pretty flexible but can lead to some weird bugs if you're not careful.
 - Objects – Collections of key-value pairs. These are everywhere in JavaScript and I'm still getting used to dot notation vs bracket notation.
@@ -33,16 +33,23 @@ function greet() {
 greet(); 
 ```
 
-Also learned the difference between typed and untyped languages. TypeScript makes sure you stick to a type, while JavaScript just lets you do whatever. This is why TypeScript catches errors before running the code (compilation errors), whereas JavaScript lets it break while running (runtime errors). Our mentor showed us a real project where TypeScript caught like 50 potential bugs before the code even ran - pretty convincing case for using it.
+Also learned the difference between typed and untyped languages. 
+
+TypeScript makes sure you stick to a data type, while JavaScript just lets you do whatever we want. 
+This is why TypeScript catches errors before running the code (compilation errors), whereas JavaScript lets it break while running (runtime errors). 
+
+Our mentor showed us a real project where TypeScript caught like 50 potential bugs before the code even ran -  convincing case for using .TS.
 
 Typed languages are great for big projects since they help prevent silly mistakes early on. I can see why our company uses TypeScript for everything now - when you're working with a team of 10+ devs, having that safety net is super important.
 
-After the session, spent about an hour refactoring some of my practice code to use TypeScript properly. Still making rookie mistakes but getting better!
 
 ## Day 16
-Today, we dived into classes and the `this` keyword in JavaScript. Man, `this` is confusing sometimes.
+Today, we learnt about **classes** and the **`this`** keyword in JavaScript. Man, `this` is confusing sometimes.
 
-A class is basically a blueprint for creating objects that share the same properties and behaviors. It's like having a cookie cutter, and every cookie (object) comes out with the same shape but can have different details. The mentor used a car analogy that helped a lot - the class is like the car design blueprint, while instances are the actual cars being driven around.
+A class is basically a blueprint for creating objects that share the same properties and behaviors. 
+ 
+
+The mentor used a building analogy that helped a lot - the class is like the building design blueprint, while instances are the actual built buildings being around in real life.
 
 ### Class Breakdown
 - Properties (What the object has) - These are like the attributes or data associated with a class instance.
@@ -72,7 +79,10 @@ myDog.bark(); // Output: Buddy says Woof!
 myDog.fetch("ball"); // Output: Buddy fetched the ball!
 ```
 
-Then we talked about shadowing—which is when a local variable inside a method has the same name as a class property, making it confusing. To avoid this, we use `this` to explicitly refer to the class property. This happened to me yesterday in my project and I couldn't figure out why my value wasn't updating - turns out I was changing a local variable instead of the class property!
+Then we talked about shadowing
+—which is when a local variable inside a method has the same name as a class property, making it confusing. 
+
+To avoid this, we use `this` to explicitly refer to the class property. This happened to me yesterday in my project and I couldn't figure out why my value wasn't updating - turns out I was changing a local variable instead of the class property!
 
 ```javascript
 class Example {
@@ -95,7 +105,8 @@ The meaning of `this` changes depending on where it's used, which is why it can 
 - In event handlers
 - With arrow functions
 
-Had a mini coding test with other interns to spot all the places where `this` was being used incorrectly. I got most of them right, but definitely still have more studying to do here.
+Had a mini coding test with other interns to spot all the places where `this` was being used incorrectly. 
+I got most of them right, but definitely still have more studying to do here.
 
 ## Day 17
 Got a performance review on our internship today. Some solid feedback, and of course, advice on how to do better. Definitely some areas to improve on.
@@ -178,7 +189,10 @@ This session felt like it unlocked a new level of understanding for me. So many 
 ## Day 20
 Today was a huge eye-opener.
 
-We had a speech on responsibility and taking ownership of our lives, given by Mr. Askin, the first employee at Surfboard. He talked about why and when to use AI, and more importantly, when not to rely on it.
+We had a speech on responsibility and taking ownership of our lives, given by Mr. Askin, the first employee at Surfboard.
+
+ He talked about why and when to use AI, and more importantly, & not to rely on it alone.
+Learn to think - its one of the most important aspect in IT.
 
 His point? AI is helpful, but if we depend on it too much, we stop thinking critically. Instead of always asking AI, we should read the documentation and learn things properly. AI gives quick answers, but that doesn't mean they're always right—or the best way to do something.
 
