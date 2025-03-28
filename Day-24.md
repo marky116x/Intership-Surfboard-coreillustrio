@@ -44,14 +44,18 @@ To set up Firebase authentication, the following steps were followed:
      import { provideAuth, getAuth } from '@angular/fire/auth';
      ```
    - Configured Firebase in `app.config.ts`:
-     ```typescript
-({
-       imports: [
-         provideFirebaseApp(() => initializeApp(environment.firebase)),
-         provideAuth(() => getAuth()),
-       ],
-     })
-     ```
+
+  ```typescript
+  import { routes } from './app.routes';
+
+  export const appConfig: ApplicationConfig = {
+    providers: [
+      provideRouter(routes),
+      provideFirebaseApp(() => initializeApp(environment.firebase)),
+      provideAuth(() => getAuth())
+    ]
+  }
+  ```
 
 
   Here’s your text with corrected spacing and formatting for clarity:
