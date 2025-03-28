@@ -45,7 +45,7 @@ To set up Firebase authentication, the following steps were followed:
      ```
    - Configured Firebase in `app.config.ts`:
      ```typescript
-({
+     ({
        imports: [
          provideFirebaseApp(() => initializeApp(environment.firebase)),
          provideAuth(() => getAuth()),
@@ -53,16 +53,14 @@ To set up Firebase authentication, the following steps were followed:
      })
      ```
 
-
-  Here’s your text with corrected spacing and formatting for clarity:
-
 ---
 
 **5. Routing Setup (`app.routes.ts`):**  
 
 - Defines routes for login (`/login`), signup (`/signup`), and home (`/home`).  
 - Default route redirects users to the login page.  
-- Any unknown routes are also redirected to `/login`.  
+- Any unknown routes are also redirected to `/login`.
+- login will route to '/home'.
 
 ---
 
