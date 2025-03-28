@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Today my internship, I  implemented user authentication in an Angular project using Firebase in login page. The goal was to create a  registration and login system that allowed users to sign up, sign in, and navigate through different pages .
+Today at internship, I  implemented user authentication in an Angular project using Firebase in login page. The goal was to create a  registration and login system that allowed users to sign up, sign in, and navigate through different pages .
 
 ## Overview
 
