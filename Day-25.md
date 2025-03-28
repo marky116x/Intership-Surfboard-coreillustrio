@@ -15,7 +15,10 @@ To set up Firebase authentication, the following steps were followed:
 1. **Firebase Project Setup:**
 
    - Created a Firebase project at [Firebase Console](https://console.firebase.google.com/).
-   - Added a new web app to generate the Firebase configuration.
+
+
+-The environment.ts file will contains Firebase configuration details (API key, project ID, etc.) from console.
+-These settings allow the app to connect with Firebase services for authentication.
 
 2. **Installing Firebase SDK in Angular:**
 
@@ -24,23 +27,63 @@ To set up Firebase authentication, the following steps were followed:
      npm install firebase @angular/fire
      ```
    - Updated `src/environments/environment.ts` with Firebase configuration.
+  
+3. **Authentication Service (auth.service.ts):**
 
-3. **Adding Firebase Modules to Angular:**
+-Handles user registration using createUserWithEmailAndPassword().
+-Manages user login via signInWithEmailAndPassword().
+-Provides a method getCurrentUser() to get the currently logged-in user.
 
-   - Imported Firebase modules in `app.module.ts`:
+
+
+4. **Adding Firebase Modules to Angular:**
+
+   - Imported Firebase modules in `app.config.ts`:
      ```typescript
      import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
      import { provideAuth, getAuth } from '@angular/fire/auth';
      ```
-   - Configured Firebase in `app.module.ts`:
+   - Configured Firebase in `app.config.ts`:
      ```typescript
-     @NgModule({
+({
        imports: [
          provideFirebaseApp(() => initializeApp(environment.firebase)),
          provideAuth(() => getAuth()),
        ],
      })
      ```
+
+
+  Here’s your text with corrected spacing and formatting for clarity:
+
+---
+
+**5. Routing Setup (`app.routes.ts`):**  
+
+- Defines routes for login (`/login`), signup (`/signup`), and home (`/home`).  
+- Default route redirects users to the login page.  
+- Any unknown routes are also redirected to `/login`.  
+
+---
+
+**6. Login Component (`login.component.ts` & `login.component.html`):**  
+
+- Displays a login form with email and password fields.  
+- Uses `AuthService` to authenticate users.  
+- If login is successful, it redirects users to the home page.  
+- Includes a button for navigating to the signup page.  
+
+---
+
+**7. Signup Component (`signup.component.ts` & `signup.component.html`):**  
+
+- Provides a form for user registration.  
+- Calls `AuthService` to register users.  
+- After successful registration, redirects users to the login page.  
+- Includes a button for navigating to the login page.  
+
+---
+🚀
 
 ## User Registration and Authentication
 
@@ -106,17 +149,22 @@ export const routes: Routes = [
 ];
 ```
 
-## Learnings and Key Takeaways
+## Learnings:
 
 - **Understanding Firebase:** Gained hands-on experience integrating Firebase authentication in an Angular project.
 
 - **Angular Forms:** Worked with `ReactiveFormsModule` for form validation and data binding.
 
-- **Routing in Angular:** Configured routes to manage user navigation dynamically.
+- **Routing in Angular:** Configured routes to manage user navigation dynamically. T
+- here are two ways:
+
+   1.Put the route in HTML using routerLink.
+   2. Define the route in a .ts file as an injectable function.
 
 
 
 ## Conclusion
 
-This internship project provided valuable experience in implementing authentication using Firebase in an Angular application. It improved my understanding of Angular services, authentication flow, and best practices for building secure web applications.
+This project provided  experience in implementing authentication using Firebase in an Angular application & how a login page works. 
+It improved my understanding of Angular services, authentication flow, and routing for building secure web applications.
 
