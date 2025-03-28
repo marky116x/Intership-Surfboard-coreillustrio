@@ -155,7 +155,7 @@ export const routes: Routes = [
 
 - **Angular Forms:** Worked with `ReactiveFormsModule` for form validation and data binding.
 
-- **Routing in Angular:** Configured routes to manage user navigation dynamically. T
+- **Routing in Angular:** Configured routes to manage user navigation dynamically.
 - here are two ways:
 
    1.Put the route in HTML using routerLink.
