@@ -4,7 +4,7 @@
 
 Today at internship, I  implemented user authentication in an Angular project using Firebase in login page. The goal was to create a  registration and login system that allowed users to sign up, sign in, and navigate through different pages .
 
-## Overview
+Overview :
 
 The project involved integrating Firebase authentication into an Angular web page . Firebase provides a Baas(Backend as a service) backend solution for authentication, enabling secure user management without the need for complex backend infrastructure.
 
