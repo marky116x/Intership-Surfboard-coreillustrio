@@ -58,8 +58,6 @@ To set up Firebase authentication, the following steps were followed:
   ```
 
 
-  Here’s your text with corrected spacing and formatting for clarity:
-
 ---
 
 **5. Routing Setup (`app.routes.ts`):**  
