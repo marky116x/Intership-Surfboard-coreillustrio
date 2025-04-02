@@ -26,11 +26,11 @@ app.delete is the API used here.
 
 ## **2. JWT vs. Sessions**
 
-## **Authentication vs Authorization**.
+## Authentication vs Authorization.
+Before going to JWT & SESSION which methods for managing user authentication.
+What exactly is authentication, and how does it differ from authorization?
 
-What exactly is authentication, and how does it differ from authorization? 
--
-- Authentication is the process of verifying who someone is, where as 
+- Authentication is the process of verifying who someone is, where as
 - Authorization is the process of verifying what specific applications, files, and data a user has access to. 
 
 ### **JWT (JSON Web Token)** 
@@ -61,6 +61,6 @@ WHERE Population > 100000
   AND CountryCode = 'USA';
 ```
 
-##Practice on HackerRank.
+## Practice on HackerRank.
 
 I solved a few SQL questions on HackerRank to help me understand querys. The exercises helped me apply `SELECT` , `WHERE` & `AND` keywords.
