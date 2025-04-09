@@ -2,7 +2,7 @@
 
 ## Introduction
 
-JSON Web Token (JWT) is a secure way to handle authentication in web applications. It allows you to verify the identity of users without storing session data on the server but on client.
+JSON Web Token (JWT) is a secure way to handle authentication in web applications. It allows you to verify the identity of users without storing session data on the server but on client.This is what i focused on
 
 
 ### Step 1: Initialize a Node.js Project
