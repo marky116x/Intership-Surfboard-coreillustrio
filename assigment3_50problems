@@ -1,0 +1,362 @@
+Output 
+1)
+Error: The getter 'x' isn't defined for the closure.
+Explanation: The inner x shadows the outer x, 
+but isn't initialized when it's 1st accessed in the inner function.
+2)
+First level: x = outer, y = middle
+Second level: x = outer, y = middle, z = inner
+After shadowing: x = shadowed, y = middle, z = inner
+Back to first level: x = outer, y = middle
+Back to main: x = outer
+3)
+Block start: x = 5
+In block: x = 10
+After block: x = 5
+4)
+Odd number: 1 at index 4
+Even number: 2 at index 4
+Odd number: 3 at index 4
+Even number: 4 at index 4
+Odd number: 5 at index 4
+Explanation: final value of i (which is 4) when executed later.
+5)
+Set in false branch
+Condition is false
+6)
+Outer loop: x = outer loop 0
+Inner loop: x = inner loop 0 in outer loop 0
+Inner loop: x = inner loop 1 in outer loop 0
+After inner loop: x = outer loop 0
+Outer loop: x = outer loop 1
+Inner loop: x = inner loop 0 in outer loop 1
+Inner loop: x = inner loop 1 in outer loop 1
+After inner loop: x = outer loop 1
+After all loops: x = global
+7)
+Start of iteration 0
+End of iteration 0
+Start of iteration 1
+End of iteration 1
+Start of iteration 2
+End of iteration 3
+Start of iteration 4
+End of iteration 4
+Explanation: When i==2, we increment i making it 3, then the loop continues with i=3.
+8)
+Processing: x = outer, y = loop 0, z = item 1, i = 0
+Odd item: x = outer, y = odd item, z = item 1
+Processing: x = outer, y = loop 1, z = item 2, i = 1
+Even item: x = even item, y = loop 1, z = item 2
+Processing: x = outer, y = loop 2, z = item 3, i = 2
+Odd item: x = outer, y = odd item, z = item 3
+Result 0: Result for 1 at position 0: x = outer, y = odd item, z = item 1
+Result 1: Result for 2 at position 1: x = even item, y = loop 1, z = item 2
+Result 2: Result for 3 at position 2: x = outer, y = odd item, z = item 3
+9)
+If block: x = 5, y = 10
+Nested if: x = 5, y = 10, z = 15
+After nested if: x = 25, y = 10
+After if-else: x = 25
+10)
+Inside loop 0: sum = 0
+Inside loop 1: sum = 2
+Inside loop 2: sum = 4
+Final sum = 0
+Explanation: The sum inside the loop shadows the outer sum, so the outer sum remains 0.
+11)
+Before declaration: outside
+After declaration: inside
+Outside condition: outside
+Explanation: A variable declaration with the same name inside a block creates a new variable that shadows the outer one.
+12)
+Inside function: x = 20
+After function call: x = 10
+Explanation: The parameter x shadows the outer x, and changes to the parameter don't affect the outer variable.
+13)
+Before shadowing: counter = 0
+After shadowing: counter = 10
+Before shadowing: counter = 1
+After shadowing: counter = 10
+Before shadowing: counter = 2
+After shadowing: counter = 10
+After loop: counter = 3
+Explanation: The counter inside the loop shadows the outer one temporarily, but the loop increment still affects the outer counter.
+
+
+
+
+
+14)
+Configured with: title = Original Title, size = 100
+
+15)
+Function 0 with param A: Match A: matching A, param: A, type: A
+Function 0 with param B: No match A: type A, param: B, type: A
+Function 1 with param A: No match B: no match B, param: A, type: local type B
+Function 1 with param B: Match B: modified main, param: B, type: local type B
+Function 2 with param A: Default: modified main, param: A, type: C, defaultValue: default case
+Function 2 with param B: Default: modified main, param: B, type: C, defaultValue: default case
+
+16)
+Start of iteration 0
+Inner block: i = 0, j = 0
+End of iteration 0
+Start of iteration 1
+Inner block: i = 1, j = 2
+End of iteration 1
+Start of iteration 2
+Inner block: i = 2, j = 4
+End of iteration 2
+
+17)
+Inside increment: count = 6
+Counter value: 0
+
+Explanation: count parameter in the increment method,, shadows. Changes to  parameter don't affect the field.
+18)
+Loop 0 - Before condition: value = outer
+Loop 0 - Odd condition: value = inner odd
+Loop 0 - After condition: value = outer
+Loop 1 - Before condition: value = outer
+Loop 1 - Even condition: value = inner even
+Loop 1 - After condition: value = outer
+Loop 2 - Before condition: value = outer
+Loop 2 - Odd condition: value = inner odd
+Loop 2 - After condition: value = outer
+After loop: value = outer
+
+19)
+x: 2, y: 3, z: 4, multiplier: 42, value: 200, total: 249
+x: 2, y: 3, z: 4, multiplier: 100, value: 200, total: 307
+
+
+20)
+Loop iteration 0
+This is an even iteration: 0
+Loop iteration 1
+This is an odd iteration: 1
+Loop iteration 2
+This is an even iteration: 2
+
+21)
+Original multiplier: 2
+Result: [1, 4, 9, 16]
+
+
+22)
+Outer start: x = 20, y = 20
+Inner: x = 30, y = 40
+Outer end: x = 20, y = 20
+Main end: x = 10, y = 20
+
+23)
+Item 1: apple
+Item 2: banana
+Item 3: cherry
+Total items: 3
+
+24)
+Counter incremented to: 1
+Operation 1: increment
+Counter incremented to: 2
+Operation 2: increment
+Counter reset to: 0
+Operation 3: reset
+Final counter value: 0
+
+25)
+Flag is true
+This is a different message
+
+26)
+12
+15
+Error: The name 'amount' isn't defined.
+
+Explanation: amount is only available within the scope of the makeAdder function.
+27)
+Level 1 - Before shadowing: global
+Level 1 - After shadowing: level 1
+Level 2 - Before shadowing: level 1
+Level 2 - After shadowing: level 2
+Level 3 - Accessing: level 2
+Level 3 - After modifying: modified level 2
+Level 2 - After level3 call: modified level 2
+Level 1 - After level2 call: level 1
+Global - After level1 call: global
+
+28)
+Processing value 1
+Processed value: 10
+Processing value 2
+Processed value: 20
+Processing value 3
+Processed value: 30
+
+29)
+Result 0: Processing apple at index 2
+Result 1: Processing banana at index 2
+Result 2: Processing cherry at index 2
+
+Explanation: The closures all capture the final value of i (which is 2).
+30)
+Operation completed successfully
+
+31)
+Global count: 100, Local count: 212, Snapshot: 106
+Global count: 100, Local count: 422, Snapshot: 211
+
+Explanation: Complex closure interactions - each level captures and modifies the state.
+32)
+First if: a = 1, b = 2, c = 3, d = 3
+Second if: a = 10, b = 2, c = 3, d = 3, e = 5
+After third if: a = 10, b = 2, c = 3, d = 3, e = 5
+After second if: a = 1, b = 2, c = 3, d = 3
+After all ifs: a = 1, b = 2, c = 3
+
+33)
+Outer loop 0 start
+ Inner loop 0
+ Inner loop 1
+Outer loop 0 end
+Outer loop 1 start
+ Inner loop 0
+ Inner loop 1
+Outer loop 1 end
+Outer loop 2 start
+ Inner loop 0
+ Inner loop 1
+Outer loop 2 end
+
+Explanation: The inner loop's i shadows the outer loop's i but doesn't affect it.
+34)
+Function 0 with multiplier 1
+Function 1 with multiplier 2
+Function 2 with multiplier 3
+
+35)
+Outer i: 0
+Inner i: 0, Captured: 0, Outer i: 0
+Inner i: 1, Captured: 1, Outer i: 2
+Outer i: 1
+Inner i: 0, Captured: 0, Outer i: 0
+Inner i: 1, Captured: 1, Outer i: 2
+Outer i: 2
+Inner i: 0, Captured: 0, Outer i: 0
+Inner i: 1, Captured: 1, Outer i: 2
+
+36)
+Iteration 0 starts
+Iteration 1 ends
+Iteration 1 starts
+Previous value was 0
+Iteration 2 ends
+Iteration 2 starts
+Previous value was 1
+Iteration 3 ends
+
+37)
+Level 1: value = global
+Level 2: value = global, level1Var = level1
+Level 3: value = level2, level1Var = level1, level2Var = level2
+Level 4: value = level2, level1Var = level4, level2Var = level2
+After level4: value = modified by level4, level1Var = modified by level3
+After level3: value = modified by level4, level1Var = modified by level3, level2Var = level2
+After level2: value = global, level1Var = modified by level3
+After level1: value = global
+
+38)
+Processing item 1, doubled: 2, running sum: 2
+Processing item 2, doubled: 4, running sum: 6
+Processing item 3, doubled: 6, running sum: 12
+Final sum: 12
+
+39)
+Outer loop 0
+ Inner loop: i = 0, j = 0
+ Inner loop: i = 0, j = 1
+ Inner loop: i = 0, j = 2
+End of outer loop 0
+Outer loop 1
+ Inner loop: i = 1, j = 0
+ Inner loop: i = 1, j = 1
+ Breaking outer loop
+After all loops
+
+40)
+Original numbers: [1, 2, 3]
+Multiplied by 10: [10, 20, 30]
+After changing factor to 20, multiplied is still: [10, 20, 30]
+
+Explanation: The factor value is captured at the time the map function runs, not when the result is used.
+41)
+Outer if: outer value
+Inner if: outer = outer value, middle = middle value
+Modified values: outer = modified outer, inner = inner value
+After inner if: outer = modified outer, middle = middle value
+After outer if: outer = modified outer
+
+42)
+Option 2 selected
+
+43)
+Added 5, sum is now 5
+Added 10, sum is now 15
+Added 15, sum is now 30
+Found value 20 exceeding threshold 18
+Final sum: 30
+
+44)
+Iteration 0 start
+Iteration 0 end
+Iteration 1 start
+getValue called
+x value: 42
+Iteration 1 end
+Iteration 2 start
+Iteration 2 end
+After loop
+
+Explanation: The late keyword delays initialization until the first use.
+45)
+Iteration 0 starts
+Skipping even number 0
+Iteration 1 starts
+Processing odd number 1
+Iteration 2 starts
+Skipping even number 2
+Iteration 3 starts
+Processing odd number 3
+Iteration 4 starts
+Skipping even number 4
+
+46)
+Outer function: value = 5
+Inner function: value = 5
+After inner function: value = 10
+Another function: value = 20
+Another inner: value = 20
+After another inner: value = 30
+After another function: value = 10
+After outer function: value = 10
+
+47)
+Processing item 1 at index 0
+Processing item 2 at index 1
+Added item 4, list is now: [1, 2, 3, 4]
+Processing item 3 at index 2
+Processing item 4 at index 3
+Final list: [1, 2, 3, 4]
+
+Explanation: The list is modified during iteration, affecting the loop.
+48)
+Before function call: x = [1, 2, 3], y = 10
+Inside function - before mutation: a = [1, 2, 3], b = 10
+Inside function - after mutation: a = [1, 2, 3, 4], b = 20
+Inside inner function: a = [1, 2, 3, 4, 5], b = 30
+After inner function: a = [1, 2, 3, 4, 5], b = 30
+After function call: x = [1, 2, 3, 4, 5], y = 10
+
+Explanation: List is modified by the function, but the integer is not.
+
