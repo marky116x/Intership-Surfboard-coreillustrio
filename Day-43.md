@@ -1,0 +1,23 @@
+# Topics covered Today:
+
+
+
+JavaScript Basics:
+
+Learned fundamental JavaScript concepts.
+
+Practiced and solved several problems to properly understanding.
+
+Firebase :
+
+Explored Firebase services including:
+
+Types of databases in Firebase (Realtime Database & Firestore Database).
+
+Firebase Analytics and its use in tracking app performance and user behavior .
+
+Project Milestone:
+
+Successfully completed and hosted the Disney+ style Angular project.
+
+Conclusion:Today’s session was productive, covering both JavaScript, problems and Firebase technologies, and marking a key milestone with  hosting my Disney angular project.
