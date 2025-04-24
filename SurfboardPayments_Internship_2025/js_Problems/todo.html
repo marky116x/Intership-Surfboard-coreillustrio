@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #todo-container {
+            max-width: 400px;
+            margin: auto;
+        }
+        input {
+            width: 70%;
+            padding: 8px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <h2>To-Do List</h2>
+    <div id="todo-container">
+        <input type="text" id="taskInput" placeholder="What you wanna do....">
+        <button onclick="addTask()">Add</button>
+
+
+        <ul id="taskList"></ul>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function addTask() {
+            let taskInput = document.getElementById("taskInput");
+            let taskValue = taskInput.value.trim();
+            
+            if (taskValue === "") return;
+
+            let li = document.createElement("li");
+            
+            li.innerHTML = `${taskValue}<button class="delete-btn" onclick="deleteTask(this)">Delete</button>`;
+
+            document.getElementById("taskList").appendChild(li);
+            taskInput.value = "";
+        }
+
+        function deleteTask(button) {
+            button.parentElement.remove();
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

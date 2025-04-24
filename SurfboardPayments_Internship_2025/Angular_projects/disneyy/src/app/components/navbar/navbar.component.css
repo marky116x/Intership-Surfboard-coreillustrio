@@ -1,0 +1,38 @@
+.hero {
+    background: url("https://media.themoviedb.org/t/p/w1066_and_h600_bestv2/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg")
+      no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8f8;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Chewy',explicit, sans-serif;
+   
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    background: linear-gradient(
+        120deg,
+        #ffffff 0%,
+        #0f4db6 30%,
+        #665bd8 50%,
+        #0f4db6 70%,
+        #ffffff 100%
+      );
+      
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+    text-shadow: none;
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+    

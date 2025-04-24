@@ -1,0 +1,27 @@
+<div class="bg-[#02061b] text-white px-4 sm:px-6 py-6 w-full">
+  <h2
+    class="text-xl sm:text-2xl font-semibold text-blue-300 tracking-wide mb-4"
+  >
+    {{ title }}
+  </h2>
+
+  <div
+    class="flex overflow-x-auto gap-4 px-1  py-6 scrollbar-hide scroll-smooth"
+  >
+    @for (movie of movies; track movie.id) {
+    <a
+      [routerLink]="['/movie', movie.id]"
+      class="min-w-[140px] sm:min-w-[160px] md:min-w-[180px] block transition-transform hover:scale-106 snap-start "
+    >
+      @if (movie.poster_path) {
+      <img
+        [src]="getImageUrl(movie.poster_path)"
+        class="rounded-lg shadow-lg w-full h-auto object-cover "
+        alt="Movie Poster"
+      />
+      
+      }
+    </a>
+    }
+  </div>
+</div>

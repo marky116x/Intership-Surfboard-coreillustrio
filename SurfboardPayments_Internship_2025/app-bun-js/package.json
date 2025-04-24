@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun --watch run index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^1.2.2",
+    "elysia": "^1.2.25"
+  }
+}

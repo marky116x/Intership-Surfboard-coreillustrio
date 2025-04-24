@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="indexlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('ca.jpg') no-repeat center center/cover;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 1000px;
+            /* background: rgba(255, 255, 255, 0.2); */
+            padding: 30px;
+            /* border-radius: 10px; */
+            /* backdrop-filter: blur(10px); */
+            flex-direction: row;
+        }
+        
+        
+            
+        
+     
+        .login-form h3 {
+            text-align: center;
+        }
+
+    
+
+ 
+        .fa:hover {
+            opacity: 0.9;
+        }
+ 
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+ 
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+ 
+        .fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+ 
+        .fa {
+            padding: 10px;
+            font-size: 15px;
+            width: 30px;
+            text-decoration: none;
+            margin: 2px 10px;
+           
+        } 
+        .icon{
+            size:0ch;
+            display: flex;
+            flex-direction: row;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text" 
+        style="max-width: 400px;
+        color: #fff;
+        font-size: 18px;">
+        <div >
+            <h1 style="font-family: MinecrafterReg">Welcome back.</h1>
+            <p>It's a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+            
+        <div>
+            <img src="iconasset/fb.png" alt="Button Icon" width="20" height="20">
+            <img src="iconasset/ig.png" alt="Button Icon" width="20" height="20">
+            <img src="iconasset/x.png" alt="Button Icon" width="20" height="20">
+            
+        </div>
+        </div>
+        </div>
+
+
+
+
+        
+    <div style="position:relative;">
+         <form class="containerform">
+            <div ><h3>Sign in</h3></div>
+
+            <div style="font-family:Verdana, Geneva, Tahoma">
+                <label for="email">Email Adress: </label>
+                <br>
+                <input type="text" placeholder="Email" id="email" size="30" >
+            </div>
+            
+            <div style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                <label for="password">Password : </label>
+                <br>
+                <input type="password" placeholder="Password" id="password" size="30">
+            </div>
+
+
+            <div>
+    <br>
+                <label class="tick"> Rember me
+                    <input type="checkbox" >
+                    <span class="checkmark"> </span>
+                </label>
+              </div>
+
+    <br>
+            <div> <button type="submit" style="background-color:rgb(228, 214, 18);";">Sign in Now</button> 
+            </div>
+
+           
+            
+
+        </form>
+    </div>
+    </div>
+</body>
+</html>

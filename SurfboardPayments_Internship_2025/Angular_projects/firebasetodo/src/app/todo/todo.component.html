@@ -1,0 +1,89 @@
+<div class="min-h-screen bg-gray-100 py-8 px-4">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Todo List</h1>
+        <button
+          (click)="logout()"
+          class="text-sm text-gray-600 hover:text-gray-800"
+        >
+          Logout
+        </button>
+      </div>
+      
+      <!-- Todo Form -->
+      <form [formGroup]="todoForm" (click)="addTodo()" class="flex gap-2 mb-6">
+        <input
+          type="text"
+          formControlName="todoText"
+          placeholder="Add a new todo..."
+          class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+        <button
+          type="submit"
+          [disabled]="!todoForm.valid"
+          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600  "
+        >
+          Add
+        </button>
+      </form>
+
+      <!-- Todo List -->
+      @if ((todos | async)?.length === 0) {
+        <p class="text-gray-500 text-center">No todos yet. Add one above!</p>
+      } @else {
+        <ul class="space-y-2">
+          @for (todo of filteredTodos$ | async; track todo.id) {
+            <li class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+              <input
+                type="checkbox"
+                [checked]="todo.completed"
+                (change)="toggleTodo(todo)"
+                class="w-5 h-5 text-blue-500 rounded focus:ring-blue-400"
+              >
+              <span [class.line-through]="todo.completed" [class.text-gray-500]="todo.completed">
+                {{ todo.text }}
+              </span>
+              <button
+                (click)="deleteTodo(todo)"
+                class="ml-auto text-red-500 hover:text-red-600"
+              >
+                Delete
+              </button>
+            </li>
+          }
+        </ul>
+      }
+
+      <!-- Filter Controls -->
+      @if ((todos | async)?.length) {
+        <div class="mt-6 flex justify-between items-center text-sm">
+          <div class="space-x-2">
+            <button
+              (click)="setFilter('all')"
+              [class.text-blue-600]="currentFilter === 'all'"
+              [class.font-semibold]="currentFilter === 'all'"
+              class="hover:text-blue-600"
+            >
+              All
+            </button>
+            <button
+              (click)="setFilter('active')"
+              [class.text-blue-600]="currentFilter === 'active'"
+              [class.font-semibold]="currentFilter === 'active'"
+              class="hover:text-blue-600"
+            >
+              Active
+            </button>
+            <button
+              (click)="setFilter('completed')"
+              [class.text-blue-600]="currentFilter === 'completed'"
+              [class.font-semibold]="currentFilter === 'completed'"
+              class="hover:text-blue-600"
+            >
+              Completed
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>

@@ -1,0 +1,61 @@
+<!-- {{ movies | json }} -->
+
+
+<!-- <div>
+<h2>{{ movies.Title }}</h2>
+<p><strong>Year:</strong> {{ movies.Year }}</p>
+<p><strong>Director:</strong> {{ movies.Director }}</p>
+<p><strong>Plot:</strong> {{ movies.Plot }}</p>
+<img [src]="movies.Poster" alt="{{ movies.Title }}" width="200">
+
+</div> -->
+
+
+<!-- Check if movies data exists -->
+@if (movies) {
+  <div class="movie-container">
+    <!-- Movie Title & Basic Info -->
+    <h2>{{ movies.Title }}</h2>
+    <p><strong>Year:</strong> {{ movies.Year }}</p>
+    <p><strong>Rated:</strong> {{ movies.Rated }}</p>
+    <p><strong>Released:</strong> {{ movies.Released }}</p>
+    <p><strong>Runtime:</strong> {{ movies.Runtime }}</p>
+    <p><strong>Genre:</strong> {{ movies.Genre }}</p>
+
+    <!-- Director, Writer, Actors -->
+    <p><strong>Director:</strong> {{ movies.Director }}</p>
+    <p><strong>Writer:</strong> {{ movies.Writer }}</p>
+    <p><strong>Actors:</strong> {{ movies.Actors }}</p>
+
+    <!-- Plot -->
+    <p><strong>Plot:</strong> {{ movies.Plot }}</p>
+
+    <!-- Language & Country -->
+    <p><strong>Language:</strong> {{ movies.Language }}</p>
+    <p><strong>Country:</strong> {{ movies.Country }}</p>
+
+    <!-- Awards -->
+    <p><strong>Awards:</strong> {{ movies.Awards }}</p>
+
+    <!-- Poster -->
+    <img [src]="movies.Poster" alt="{{ movies.Title }}" width="200">
+
+    <!-- Ratings -->
+    <h3>Ratings:</h3>
+    <ul>
+      @for (rating of movies.Ratings; track rating) {
+        <li>{{ rating.Source }}: {{ rating.Value }}</li>
+      }
+    </ul>
+
+    <!-- Box Office & More -->
+    <p><strong>Box Office:</strong> {{ movies.BoxOffice }}</p>
+    <p><strong>IMDB Rating:</strong> {{ movies.imdbRating }} ({{ movies.imdbVotes }} votes)</p>
+    
+    
+  </div>
+}
+
+<app-hero></app-hero>
+
+<router-outlet />

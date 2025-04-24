@@ -1,0 +1,48 @@
+<!-- watchlist.component.html -->
+<div class="p-6 bg-[#0d1117] min-h-screen text-white">
+  <h2 class="text-3xl font-bold mb-6 text-blue-400">My Watchlist</h2>
+
+  @if (watchlistService.getWatchlist().length === 0) {
+    <p class="text-center text-gray-400 text-lg mt-10">
+      Your watchlist is empty. Start adding movies!
+    </p>
+  } @else {
+    <div class="space-y-6">
+      @for (movie of watchlistService.getWatchlist(); track movie.id) {
+        <a
+          [routerLink]="['/movie', movie.id]"
+          class="flex items-start gap-4 bg-[#161b22] min-w-[140px]  transition-transform hover:scale-105 snap-start"
+        >
+          @if (movie.poster_path) {
+            <img
+              [src]="getHighQualityImageUrl(movie.backdrop_path)"
+              alt="Movie Poster"
+              class="w-55 object-cover rounded-lg shadow "
+            />
+          }
+
+          <div class="flex-1 ">
+            <h3 class="text-lg font-semibold text-white">
+              {{ movie.title || movie.name }}
+            </h3>
+            <p class="text-sm text-gray-400 mt-1">
+               {{ movie.overview }} 
+            </p>
+          </div>
+        </a>
+      }
+    </div>
+  }
+</div>
+
+
+  
+  
+
+
+    <!-- <div class="">
+      @for (movie of watchlistService.getWatchlist(); track movie.id) {
+        <app-movie-detail [movie]="movie"></app-movie-detail>
+      
+      }
+    </div> -->

@@ -1,0 +1,38 @@
+ 
+
+
+<section
+  class="relative bg-cover bg-center h-[80vh] flex items-start md:items-center justify-start  md:px-16 pb-10 md:pb-1 text-white transition-all duration-700"
+  [ngStyle]="{ 'background-image': 'url(' + backgroundImageUrl + ')' }"
+>
+
+
+  <!-- Movie Details -->
+  <div class="relative z-10 max-w-4xl justify-start">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+      {{ currentTitle }}
+    </h1>
+    <p class="text-md md:text-lg text-gray-200 drop-shadow-md">
+      {{ currentOverview }}
+    </p>
+  </div>
+
+  <!-- Arrows -->
+  <button
+    (click)="prevImage()"
+    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/60 hover:bg-white p-3 rounded-full text-white z-10">
+    <!-- &#8592; -->
+     <img src="larrow.png" class="w-4 h-4">
+  </button>
+  <button
+    (click)="nextImage()"
+    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/60 hover:bg-white p-3 rounded-full text-white z-10"
+  >
+    <!-- &#8594; -->
+    <img src="rarrow.png" class="w-4 h-4 ">
+  </button>
+
+    <!-- Dark shadow down -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent "></div>
+</section>
+

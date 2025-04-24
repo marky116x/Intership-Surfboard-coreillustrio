@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Avinash J - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #f0a500;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #444;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .skills img {
+            width: 50px;
+            margin: 10px;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn {
+            background: #f0a500;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+        <section id="about">
+            <h1>Mark Avinash J</h1>
+            <p>Software Engineer | Frontend & Java Developer</p>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Flutter_logo.svg" alt="Flutter">
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p><b>SPARK - Strategic Productivity Analysis and Reporting Kit</b></p>
+            <p>A web application built with React, Next.js, PHP, and SQL to enhance remote productivity tracking.</p>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" rows="4" placeholder="Type your message..."></textarea>
+            <button class="btn" onclick="sendMessage()">Send Message</button>
+        </section>
+    </div>
+    
+    <script>
+        function sendMessage() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('Thank you, ' + name + '! Your message has been sent.');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+</body>
+</html>

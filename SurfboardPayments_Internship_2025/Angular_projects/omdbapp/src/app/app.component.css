@@ -1,0 +1,64 @@
+.movie-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .movie-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .movie-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .movie-container strong {
+    color: #222;
+  }
+  
+  .movie-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto;
+  }
+  
+  .ratings-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .ratings-list li {
+    background: #f1f1f1;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #007bff;
+  }
+  
+  .json-data {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+  

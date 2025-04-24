@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Videos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #101010;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .video-card {
+        background-color: #1c1c1c;
+        padding: 10px;
+        border-radius: 10px;
+        width: 320px;
+      }
+      iframe {
+        width: 100%;
+        height: 180px;
+        border: none;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #ff6f61;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Trailers</h1>
+    <div id="video-list" class="video-container">
+      <!-- Videos will be injected here -->
+    </div>
+
+    <script>
+      const apiKey = "7c98f4ea1bff8262bb7079a2dccd4456";
+      const apiUrl = "https://api.themoviedb.org/3";
+      const movieId = 324857;
+
+      async function fetchVideos() {
+        const url = `${apiUrl}/movie/${movieId}/videos?api_key=${apiKey}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        const videos = data.results;
+
+        if (videos.length > 0) {
+          displayVideos(videos);
+        } else {
+          document.getElementById("video-list").innerHTML =
+            "<p>No videos available</p>";
+        }
+      }
+
+      function displayVideos(videos) {
+        const videoContainer = document.getElementById("video-list");
+        videoContainer.innerHTML = ""; // Clear any previous content
+
+        videos.forEach((video) => {
+          const videoCard = document.createElement("div");
+          videoCard.classList.add("video-card");
+
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube.com/embed/${video.key}`;
+          iframe.title = video.name;
+
+          const title = document.createElement("h3");
+          title.innerText = video.name;
+
+          videoCard.appendChild(title);
+          videoCard.appendChild(iframe);
+          videoContainer.appendChild(videoCard);
+        });
+      }
+
+      // Load videos when the page loads
+      fetchVideos();
+    </script>
+  </body>
+</html>

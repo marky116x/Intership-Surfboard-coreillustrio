@@ -1,0 +1,12 @@
+<div>
+  <h1>One Component</h1>
+  <p>Message from Two: {{ receivedMessage }}</p>
+
+  <app-two [message]="oneMessage" (notify)="notify($event)"> </app-two>
+
+
+
+  
+</div>
+
+

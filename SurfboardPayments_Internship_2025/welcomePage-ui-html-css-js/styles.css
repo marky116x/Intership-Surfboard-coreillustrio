@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 100vh;
+    background-image: url("pine.jpg");
+    background-size: cover;
+
+}
+
+
+
+.container {
+    display: flex;
+    
+    width: 70%;
+    max-width: 1000px;
+    /* background: rgb(109, 70, 70); */
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.welcome-section {
+    flex: 1;
+    padding: 20px;
+    margin-right: 5%;
+
+    
+
+    
+}
+
+.welcome-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+
+
+    font-family: 'Arial', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    margin: 20px 0;
+    line-height: 1.5;
+    
+}
+
+.social-icons img {
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    width: 25px; 
+          height: 25px;
+}
+
+.login-section {
+    flex: 1;
+    /* background: rgba(255, 255, 255, 0.2); */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display:block;
+    align-items:normal;
+    margin:10px;
+    
+}
+
+
+
+button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+
+    height:40px;
+    width:90px;
+
+}
+
+button:hover {
+    background: darkorange;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+
+    align-items: center;
+
+}
+
+.terms a {
+    color: white;
+    text-decoration: underline;
+}
+
+.login-section h2 {
+    align-items: center;
+    font-size: 6vh;;
+}
+

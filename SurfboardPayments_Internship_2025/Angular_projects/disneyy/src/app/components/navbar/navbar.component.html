@@ -1,0 +1,75 @@
+<!-- Navigation Bar -->
+<nav class="bg-[#040714] text-white px-6 py-4 flex justify-between items-center shadow-md h-17">
+  <!-- Left side: Logo and navigation -->
+  <div class="flex items-center gap-10"> 
+    <img src="icons8-disney-plus-96.png" alt="Disney+" class="w-14" /> 
+    <ul class="flex gap-7 text-md font-medium">
+      <li class="hover:text-[#00bfff] cursor-pointer" routerLink="/">Home</li>
+      <li class="hover:text-[#00bfff] cursor-pointer" routerLink="/orignals">Originals</li>
+      <li class="hover:text-[#00bfff] cursor-pointer" routerLink="/movies">Movies</li>
+      <li class="hover:text-[#00bfff] cursor-pointer" routerLink="/series">Series</li>
+      <li class="hover:text-[#00bfff] cursor-pointer" routerLink="/watchlist">Watchlist</li>
+    </ul>
+  </div>
+
+  <!-- Right side: Search and profile -->
+  <div class="flex items-center gap-4">
+    <!-- Search Area -->
+    <div class="relative search-wrapper w-48 md:w-64">
+      <input
+        [formControl]="searchControl"
+        (keydown.enter)="searchMovies()"
+        type="text"
+        placeholder="Search movies..."
+        class="bg-[#1f1f1f] text-white px-4 py-2 pr-12 rounded-lg w-full focus:outline-none"
+      />
+      <!-- Search button positioned inside input -->
+      <button
+        (click)="searchMovies()"
+        class="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-br from-[#1a1aff] to-[#113ccf]
+               hover:from-[#1f80e0] hover:to-[#1a1aff]
+               text-white w-8 h-8 rounded-full shadow-md hover:shadow-blue-500/40
+               flex items-center justify-center transition-all duration-300 ease-in-out
+               ring-1 ring-blue-300/20 hover:ring-blue-500/30 backdrop-blur-sm"
+        aria-label="Search"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
+        </svg>
+      </button>
+      
+      <!-- Dropdown Results -->
+      @if (showDropdown && searchResults.length > 0) {
+        <div
+          class="absolute top-full mt-2 w-[280px] md:w-[320px] bg-[#0d0d0d] shadow-lg rounded-lg z-50 max-h-[400px] overflow-y-auto pr-4"
+        >
+          @for (movie of searchResults; track movie.id) {
+            <div
+              (click)="goToMovie(movie.id)"
+              class="flex items-center gap-3 p-3 hover:bg-[#1f1f1f] cursor-pointer transition"
+            >
+              @if (movie.poster_path) {
+                <img
+                  [src]="'https://image.tmdb.org/t/p/w92' + movie.poster_path"
+                  alt="{{ movie.title }}"
+                  class="w-12 h-16 rounded object-cover"
+                />
+              }
+              <div>
+                <h4 class="font-semibold text-white">
+                  {{ movie.title || movie.name }}
+                </h4>
+                <p class="text-xs text-gray-400 line-clamp-2">
+                  {{ movie.overview?.slice(0, 80) }}...
+                </p>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Profile Image -->
+    <img src="_ (7).jpeg" alt="Profile" class="w-10 h-10 rounded-full" routerLink="/profile"/>
+  </div>
+</nav>

@@ -1,0 +1,13 @@
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+
+  .bg-disney {
+    background: radial-gradient(circle at top left, #0f172a 0%, #040714 100%);
+  }
+  

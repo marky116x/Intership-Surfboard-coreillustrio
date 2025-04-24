@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+
+<app-hero></app-hero>
+
+
+<!-- <app-movie-list></app-movie-list> -->
+
+<!-- <hr class="border-amber-300 border-t-20 my-4" /> -->
+
+
+
+ 
+
+<!-- <app-movie-row
+  [title]="'video'"
+  [fetch]="movieService.getVideos.bind(movieService)"
+>
+</app-movie-row> -->
+
+<app-movie-row
+  [title]="'Disney Picks'"
+  [fetch]="movieService.getDisneyMovies.bind(movieService)"
+>
+</app-movie-row>
+
+<app-movie-row
+  [title]="'Trending Now'"
+  [fetch]="movieService.getTrendingMovies.bind(movieService)"
+>
+</app-movie-row>
+
+<app-movie-row
+  [title]="'Top Rated'"
+  [fetch]="movieService.getTopRatedMovies.bind(movieService)"
+>
+</app-movie-row>
+
+<app-movie-row
+  [title]="'Pixar'"
+  [fetch]="movieService.getPixar.bind(movieService)"
+>
+</app-movie-row>
+
+<app-movie-row
+  [title]="'Marky\'s Picks'"
+  [fetch]="movieService.getPicks.bind(movieService)"
+>
+</app-movie-row>
+
+
+<app-footer></app-footer>

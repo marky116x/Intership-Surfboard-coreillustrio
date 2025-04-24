@@ -1,0 +1,187 @@
+<div
+  [formGroup]="profileForm"
+  class="p-8 rounded-2xl w-full max-w-xl mx-auto mt-12 shadow-2xl border border-gray-300 bg-white"
+>
+  <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">
+    Profile Form
+  </h1>
+
+  <div class="grid grid-cols-1 gap-6 ">
+    <div class="flex flex-col">
+      <label for="name" class="text-lg font-semibold   mb-1">Name</label>
+      <input
+        type="text"
+        formControlName="name"
+        placeholder="Enter your name"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm  "
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold  mb-1">Age</label>
+      <input
+        type="number"
+        formControlName="age"
+        placeholder="Enter your age"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm  "
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold   mb-1">Phone</label>
+      <input
+        type="text"
+        formControlName="phone"
+        placeholder="Enter your phone number"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm  "
+      />
+    </div>
+    
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold   mb-1">Address</label>
+      <input
+        type="text"
+        formControlName="address"
+        placeholder="Enter your address"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm "
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold  mb-1">City</label>
+      <select
+        formControlName="city"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm  "
+      >
+        <option value="1">Bangalore</option>
+        <option value="2">Delhi</option>
+        <option value="3">Mumbai</option>
+        <option value="4">Chennai</option>
+        <option value="5">Kolkata</option>
+      </select>
+    </div>
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold  mb-1">State</label>
+      <select
+        formControlName="state"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm "
+      >
+        @for(i of state; track i) {
+          <option value="{{ i }}">{{ i }}</option>
+        }
+      </select>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold  mb-1">Country</label>
+      <!-- <input
+        type="text"
+        formControlName="country"
+        placeholder="Enter your country"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm  focus:ring-2 focus:ring-blue-500"
+      /> -->
+
+      <select
+        formControlName="country"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm   "
+      >
+        <option value="1">India</option>
+        <option value="2">USA</option>
+        <option value="3">UK</option>
+        <option value="4">Australia</option>
+        <option value="5">Canada</option>
+        <option value="6">Germany</option>
+        <option value="7">France</option>
+        <option value="8">Japan</option>
+        <option value="9">China</option>
+        <option value="10">Brazil</option>
+      </select>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="flex flex-col">
+      <label class="text-lg font-semibold  mb-1">Zip Code</label>
+      <input
+        type="text"
+        formControlName="zipCode"
+        placeholder="Enter your zip code"
+        class="p-3 border border-gray-300 rounded-lg shadow-sm   "
+      />
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <button
+    type="submit"
+    class="w-full bg-blue-600 text-white text-lg font-semibold py-3 rounded-lg mt-8 hover:bg-blue-700 transition-all duration-300 shadow-md"
+    (click)="onSubmit()"
+  >
+    Submit
+  </button>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+@if(submitted) {
+
+  <div class="mt-10 bg-green-50 p-6 rounded-xl border border-green-200 ">
+    <h2 class="text-2xl font-bold text-green-800 mb-4">
+      Form Submitted Successfully!
+    </h2>
+    <pre class="bg-gray-100 p-4 rounded text-sm border-4 text-gray-800 ">{{ profileForm.value | json }}</pre>
+    <p class="mt-4 text-green-700">Thank you for submitting your profile.</p>
+
+
+    <button
+      class="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-300"
+      (click)="resetForm()" 
+    >
+      Reset Form
+    </button>
+
+
+  </div>
+}

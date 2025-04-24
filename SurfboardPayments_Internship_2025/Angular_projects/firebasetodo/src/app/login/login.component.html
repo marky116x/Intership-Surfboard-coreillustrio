@@ -1,0 +1,56 @@
+<div class="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-md p-8">
+      <h2 class="text-2xl font-bold text-center mb-8">{{ isLoginMode ? 'Login' : 'Register' }}</h2>
+      
+      @if (errorMessage) {
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+          {{ errorMessage }}
+        </div>
+      }
+      
+      <form [formGroup]="authForm" (ngSubmit)="onSubmit()" class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            id="email"
+            formControlName="email"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          >
+          @if (authForm.get('email')?.invalid && authForm.get('email')?.touched) {
+            <p class="mt-1 text-sm text-red-600">Please enter a valid email</p>
+          }
+        </div>
+        
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input
+            type="password"
+            id="password"
+            formControlName="password"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          >
+          @if (authForm.get('password')?.invalid && authForm.get('password')?.touched) {
+            <p class="mt-1 text-sm text-red-600">Password must be at least 6 characters</p>
+          }
+        </div>
+        
+        <button
+          type="submit"
+          [disabled]="authForm.invalid || isLoading"
+          class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+        >
+          {{ isLoading ? 'Processing...' : (isLoginMode ? 'Login' : 'Register') }}
+        </button>
+      </form>
+      
+      <div class="mt-6 text-center">
+        <button
+          (click)="toggleMode()"
+          class="text-sm text-blue-600 hover:text-blue-500"
+        >
+          {{ isLoginMode ? 'Need an account? Register' : 'Already have an account? Login' }}
+        </button>
+      </div>
+    </div>
+  </div>

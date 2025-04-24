@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    /* Internal CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+
+
+    nav {
+    width: 100%;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    gap: 20px;
+    z-index: 100;
+}
+
+
+nav ul li a:hover {
+    background-color: #46aee6; /* Optional hover effect */
+    border-radius: 5px;
+}
+
+
+    header {
+        flex: auto;
+        background-color: #0077b6;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position:sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    header h1 {
+        font-size: 24px;
+        
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration:dotted;
+    }
+
+    .hero {
+        flex: auto;
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #caf0f8;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p img{
+        flex: auto;
+        margin: 10px 0 20px;
+        width: 30%;
+        
+    }
+    
+
+    .btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        padding: 10px 20px;
+        background-color: #4ea8de;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .projects-container {
+        
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-card {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+        border: 1px solid #4ea8de;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>Mark Avinash J</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Hi, I'm Mark Avinash J</h2>
+    <p>Software Engineer | Frontend Developer
+        <br>
+        <img src="bg.png" alt="Web">
+    </p>
+    <br>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <pre>I'm a software engineer with experience in HTML, CSS, and JavaScript. I've interned at Infosys and SurfBoard Payments and worked as a trainee at TNS Foundation. 
+        I enjoy building clean and functional web applications.</pre>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Angular</div>
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio to showcase my skills and projects.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project Management App</h3>
+            <p>SPARK - Strategic Productivity Analysis and Reporting Kit.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mark Avinash J</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
