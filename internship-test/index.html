@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    
+    1. js , system that processes mathemitical expression.
+     2. it can be array or even nested array
+      3. mulitiple values and nested sub-expression
+
+       [value1,value2....valueN, operation]
+
+        4. operation = add, sub, multiply, divide ... 
+
+    input[[1,2,add],[8,4,divide], multiply]
+    output 3 * 2 = 6
+    
+    -->
+
+    <script>
+      let arr = [];
+
+      let operation, add, sub, mul, div;
+
+      function calc(arr, operation) {
+        for (x of arr) {
+          switch (operation) {
+        case 'add':
+            return values.reduce((a, b) => a + b);
+        case 'sub':
+            return values.reduce((a, b) => a - b);
+        case 'multiply':
+            return values.reduce((a, b) => a * b);
+        case 'divide':
+            return values.reduce((a, b) => a / b);
+        default:
+            return 1
+    }
+        }
+      }
+
+      console.log(calc([5, 5], mul));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>

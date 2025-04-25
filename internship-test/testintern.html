@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function evaluate(x) {
+
+        if (typeof x === 'number') {
+            return x;
+        }
+    
+         
+        const operation = x[x.length - 1];
+        const values = x.slice(0, -1).map(evaluate);  
+    
+        switch (operation) {
+            case 'add':
+                return values.reduce((a, b) => a + b);
+            case 'sub':
+                return values.reduce((a, b) => a - b);
+            case 'multiply':
+                return values.reduce((a, b) => a * b);
+            case 'divide':
+                return values.reduce((a, b) => a / b);
+            default:
+                throw new Error(`Unknown operation: ${operation}`);
+        }
+    }
+    
+     
+    const input = [[1, 2, 'add'], [8, 4, 'divide'], 'multiply'];
+    const res = evaluate(input);
+    console.log(res);
+    
+    
+    
+    </script>
+</body>
+</html>
