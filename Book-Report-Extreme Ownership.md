@@ -73,7 +73,7 @@ That’s the price and privilege of being a leader. And honestly, it’s kind of
 
 ### Applying This to Life Beyond the Battlefield
 
-Here’s where things start to click. You might think, “Cool war story, but I’m not in a firefight in Iraq. How does this help me with my team at work or in my startup or even in my relationships?” The beauty of this principle is that it transcends context.
+Here’s where things start to click. we might think, “Cool war story, but I’m not in a firefight in Iraq. How does this help me with my team at work or in my office or even in my relationships?” The beauty of this principle is that it transcends context.
 
 Willink and Babin break it down in a business scenario involving a company dealing with a failed project. The CEO is frustrated, middle management is playing the blame game, and the team morale is shot. Sound familiar?
 
